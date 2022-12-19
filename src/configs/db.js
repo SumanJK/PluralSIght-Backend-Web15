@@ -4,6 +4,6 @@ require("dotenv").config();
 //!  connecting to dataBase
 
 module.exports = () =>{
-    mongoose.connect(process.env.DATABASE);
+    mongoose.connect(process.env.DATABASE_URI, {useNewUrlParser: true});
     
 };
